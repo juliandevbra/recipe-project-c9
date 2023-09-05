@@ -18,7 +18,7 @@ const Home = () => {
     <div>
         {lista.map((receta) => {
             {console.log(receta.id)}    
-            return <Link to={'/recipe/' + receta.id}><li>{receta.title}</li></Link>
+            return <Link to={'/recipe/' + receta.id} key={receta.id}><li>{receta.title}</li></Link>
         })}
     </div>
   )
