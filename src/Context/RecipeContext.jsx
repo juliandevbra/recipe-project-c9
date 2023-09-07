@@ -4,7 +4,6 @@ const RecipeStates = createContext()
 
 const RecipeContext = ({children}) => {
     const [favs, setFavs] = useState([])
-
     return(
         <RecipeStates.Provider value={{favs, setFavs}}>
             {children}
